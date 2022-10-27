@@ -3,6 +3,13 @@
     margin: 0em;
 }
 
+:root {
+    --bgcolor: #0365AE;
+    --txtcolor: #fff;
+    --newscolor: #F3C42B;
+    --newstxtcolor: ;
+}
+
 html,
 body {
     font-size: 100%;
@@ -11,6 +18,92 @@ body {
     margin: auto;
 }
 
+html {
+    background-image: url(./images/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    padding-top: 0.7em;
+}
+
+header h1 {}
+
+header h2 {
+    font-size: 1.8em;
+    padding: 0.5em;
+    margin-top: 0.7em;
+}
+
 body {
     max-width: 1024px;
+    background-color: #0365AE;
+    border-width: 1em;
+    border-color: black;
 }
+
+aside {
+    float: right;
+    margin-right: 10%;
+    max-width: 30%;
+    background-color: #163F77;
+    margin: 0.5em
+}
+
+aside h2 {
+    background-color: #F3C42B;
+    margin: 0.3em;
+}
+
+aside dl {
+    padding: 0em 1em 0em;
+}
+
+#breadcrumb {
+    background-color: #163F77;
+    padding: 0.5em 1em 0.5em;
+}
+
+#menu {
+    float: left;
+    width: 17%;
+    padding: 0.5em 1em 0.5em;
+}
+
+#menu ul {
+    list-style: none;
+    color: white;
+}
+
+#menu a {
+    color: #F3C42B;
+}
+
+#currentlink {}
+
+main {
+    background-color: white;
+    margin-left: 20%;
+    padding: 2em;
+}
+
+main h1 {
+    line-height: 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+footer {
+    float: none;
+    text-align: center;
+}
+
+/*
+0365AE background
+163F77 breadcrumb
+F3C42B arancione
+*/
