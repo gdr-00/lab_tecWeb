@@ -5,9 +5,15 @@
 
 :root {
     --bgcolor: #0365AE;
-    --txtcolor: #fff;
+    --breadcolor: #163F77;
+    --txtcolor: #FFF;
     --newscolor: #F3C42B;
-    --newstxtcolor: ;
+    --newstxtcolor: #000;
+    --contentxtcolor: #000;
+    --contentbgcolor: #FFF;
+    --linkcolor: #FFF;
+    --visitedcolor: #F3C42B;
+    --bordercolor: #000;
 }
 
 html,
@@ -20,9 +26,23 @@ body {
 
 html {
     background-image: url(./images/bg.png);
-    background-repeat: no-repeat;
     background-size: contain;
 }
+
+body {
+    max-width: 1024px;
+    margin: auto;
+    background-color: var(--bgcolor);
+    border-style: solid;
+    border-width: 0.15em;
+    border-color: var(--bordercolor);
+}
+
+/*
+======================================
+                HEADER
+======================================
+*/
 
 header {
     color: white;
@@ -31,7 +51,9 @@ header {
     padding-top: 0.7em;
 }
 
-header h1 {}
+header h1 {
+    display: none;
+}
 
 header h2 {
     font-size: 1.8em;
@@ -39,71 +61,118 @@ header h2 {
     margin-top: 0.7em;
 }
 
-body {
-    max-width: 1024px;
-    background-color: #0365AE;
-    border-width: 1em;
-    border-color: black;
+/*
+======================================
+                MENU
+======================================
+*/
+
+#breadcrumb {
+    background-color: #163F77;
+    padding: 0.5em 1em 0.5em;
+    border-style: solid;
+    border-width: 0.15em;
+    border-color: var(--bordercolor);
+    border-left: 0em;
+    border-right: 0em;
 }
+
+#breadcrumb a:link {
+    color: var(--linkcolor);
+}
+
+#breadcrumb a:visited {
+    color: var(--visitedcolor);
+}
+
+#menu {
+    float: left;
+    width: 25%;
+    font-size: 1.3em;
+    padding: 0.8em;
+}
+
+#menu a:link {
+    color: var(--linkcolor);
+}
+
+#menu a:visited {
+    color: var(--visitedcolor);
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+/*
+======================================
+                CORPO
+======================================
+*/
 
 aside {
     float: right;
     margin-right: 10%;
     max-width: 30%;
-    background-color: #163F77;
-    margin: 0.5em
+    background-color: var(--bgcolor);
+    margin: 0.5em;
 }
 
 aside h2 {
-    background-color: #F3C42B;
+    background-color: var(--newscolor);
     margin: 0.3em;
+    margin-bottom: 0em;
 }
 
 aside dl {
-    padding: 0em 1em 0em;
+    color: var(--txtcolor);
 }
 
-#breadcrumb {
-    background-color: #163F77;
-    padding: 0.5em 1em 0.5em;
+aside dl dt {
+    padding-left: 1em;
+    font-weight: bold;
 }
 
-#menu {
-    float: left;
-    width: 17%;
-    padding: 0.5em 1em 0.5em;
+aside dl dd {
+    padding-left: 1.5em;
+    padding-right: 0.2em;
 }
-
-#menu ul {
-    list-style: none;
-    color: white;
-}
-
-#menu a {
-    color: #F3C42B;
-}
-
-#currentlink {}
 
 main {
-    background-color: white;
-    margin-left: 20%;
+    background-color: var(--contentbgcolor);
+    margin-left: 25%;
     padding: 2em;
+
+    border-style: solid;
+    border-width: 0.15em;
+    border-color: var(--bordercolor);
+    border-top: 0em;
+    border-bottom: 0em;
+    border-right: 0em;
 }
 
 main h1 {
-    line-height: 1.2em;
+    line-height: 1.5em;
     margin-bottom: 1em;
     text-align: center;
 }
 
-footer {
-    float: none;
-    text-align: center;
-}
-
 /*
-0365AE background
-163F77 breadcrumb
-F3C42B arancione
+======================================
+                FOOTER
+======================================
 */
+
+footer {
+    color: var(--txtcolor);
+    background-color: var(--breadcolor);
+    text-align: center;
+    font-style: italic;
+
+    border-style: solid;
+    border-width: 0.15em;
+    border-color: var(--bordercolor);
+    border-bottom: 0em;
+    border-right: 0em;
+    border-left: 0em;
+}
