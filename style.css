@@ -51,6 +51,10 @@ header {
     padding-top: 0.7em;
 }
 
+header img {
+    max-width: 40%;
+}
+
 header h1 {
     display: none;
 }
@@ -102,6 +106,14 @@ header h2 {
 
 #menu ul {
     list-style-type: none;
+}
+
+#currentlink {
+    color: var(--txtcolor);
+    padding-left: 1.3em;
+    background-image: url(./images/favicon-32x32.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
 }
 
 /*
