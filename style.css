@@ -73,6 +73,7 @@ header h2 {
 
 #breadcrumb {
     background-color: #163F77;
+    color: var(--txtcolor);
     padding: 0.5em 1em 0.5em;
     border-style: solid;
     border-width: 0.15em;
@@ -110,10 +111,11 @@ header h2 {
 
 #currentlink {
     color: var(--txtcolor);
-    padding-left: 1.3em;
+    padding-left: 1.5em;
     background-image: url(./images/favicon-32x32.png);
     background-repeat: no-repeat;
-    background-size: 1em;
+    background-size: 1.1em;
+    background-position-y: center;
 }
 
 /*
@@ -124,7 +126,6 @@ header h2 {
 
 aside {
     float: right;
-    margin-right: 10%;
     max-width: 30%;
     background-color: var(--bgcolor);
     margin: 0.5em;
@@ -168,6 +169,35 @@ main h1 {
     margin-bottom: 1em;
     text-align: center;
 }
+
+main>dl {
+    margin-left: 1em;
+}
+
+main>dl>dt {
+    padding-left: 1em;
+    background-image: url(./images/favicon-32x32.png);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position-y: center;
+}
+
+main>dl>dd {
+    padding-left: 1em;
+}
+
+main>ul {
+    margin-left: 2em;
+}
+
+main>img {
+    float: left;
+    max-width: 40%;
+    shape-outside: margin-box;
+    border-radius: 0 20% 20% 0 /40%;
+    margin: 0em 2em 1em 0em;
+}
+
 
 /*
 ======================================
