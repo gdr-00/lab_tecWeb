@@ -45,7 +45,7 @@ body {
 */
 
 header {
-    color: white;
+    color: var(--txtcolor);
     text-align: center;
     padding: 1em;
     padding-top: 0.7em;
@@ -72,7 +72,7 @@ header h2 {
 */
 
 #breadcrumb {
-    background-color: #163F77;
+    background-color: var(--breadcolor);
     color: var(--txtcolor);
     padding: 0.5em 1em 0.5em;
     border-style: solid;
@@ -129,11 +129,16 @@ aside {
     float: right;
     max-width: 30%;
     background-color: var(--bgcolor);
-    margin: 0.5em;
+    border-width: 0.15em;
+    border-color: var(--bordercolor);
+    border-style: solid;
 }
 
 aside h2 {
     background-color: var(--newscolor);
+    padding: 0.2em;
+    font-size: 1.2em;
+    font-weight: bold;
     margin: 0.3em;
     margin-bottom: 0em;
 }
@@ -155,7 +160,8 @@ aside dl dd {
 main {
     background-color: var(--contentbgcolor);
     margin-left: 25%;
-    padding: 2em;
+    padding: 1.5em;
+    padding-top: 1em;
     border-style: solid;
     border-width: 0.15em;
     border-color: var(--bordercolor);
@@ -164,10 +170,20 @@ main {
     border-right: 0em;
 }
 
+main>p {
+    margin-bottom: 0.5em;
+}
+
 main h1 {
     line-height: 1.5em;
     margin-bottom: 1em;
     text-align: center;
+}
+
+main>h2 {
+    line-height: 1.5em;
+    margin: 0.7em 0em;
+    text-align: left;
 }
 
 main>dl {
@@ -217,7 +233,7 @@ main>img {
 }
 
 #squadra>dd {
-    border-color: #000;
+    border-color: var(--bordercolor);
     border-width: .15em;
     border-style: solid;
     border-top: none;
@@ -253,10 +269,12 @@ main>img {
 */
 
 footer {
+    display: inline-b;
     color: var(--txtcolor);
     background-color: var(--breadcolor);
     text-align: center;
     font-style: italic;
+    height: 3em;
 
     border-style: solid;
     border-width: 0.15em;
@@ -264,4 +282,12 @@ footer {
     border-bottom: 0em;
     border-right: 0em;
     border-left: 0em;
+}
+
+img.imgValidCode:first-child {
+    float: left;
+}
+
+img.imgValidCode:nth-of-type(2) {
+    float: right;
 }
