@@ -269,7 +269,6 @@ main>img {
 */
 
 footer {
-    display: inline-b;
     color: var(--txtcolor);
     background-color: var(--breadcolor);
     text-align: center;
@@ -282,12 +281,4 @@ footer {
     border-bottom: 0em;
     border-right: 0em;
     border-left: 0em;
-}
-
-img.imgValidCode:first-child {
-    float: left;
-}
-
-img.imgValidCode:nth-of-type(2) {
-    float: right;
 }
