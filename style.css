@@ -25,8 +25,8 @@ body {
 }
 
 html {
-    background-image: url(./images/bg.png);
-    background-size: contain;
+    background: url(./images/bg.png) center/cover;
+    /*TODO*/
 }
 
 body {
@@ -94,6 +94,7 @@ header h2 {
     float: left;
     width: 25%;
     font-size: 1.3em;
+    line-height: 1.7em;
     padding: 0.8em;
 }
 
@@ -155,7 +156,6 @@ main {
     background-color: var(--contentbgcolor);
     margin-left: 25%;
     padding: 2em;
-
     border-style: solid;
     border-width: 0.15em;
     border-color: var(--bordercolor);
@@ -198,6 +198,53 @@ main>img {
     margin: 0em 2em 1em 0em;
 }
 
+#squadra {
+    display: block;
+    width: 95%;
+}
+
+#squadra em {
+    font-style: italic;
+}
+
+#squadra>dt {
+    color: var(--txtcolor);
+    background: var(--breadcolor);
+    font-weight: bold;
+    margin-top: 1em;
+    padding-top: 0.5em;
+    height: 2em;
+}
+
+#squadra>dd {
+    border-color: #000;
+    border-width: .15em;
+    border-style: solid;
+    border-top: none;
+}
+
+#squadra>dd img {
+    float: left;
+    max-width: 20%;
+}
+
+#squadra>dd>dl {
+    margin-left: 25%;
+}
+
+#squadra>dd>dl>dt {
+    float: left;
+    font-weight: bold;
+}
+
+#squadra>dd>dl>dt::after {
+    content: "\00a0";
+}
+
+#squadra>dd>dl>dd ul {
+    clear: both;
+    margin-left: 2em;
+}
 
 /*
 ======================================
