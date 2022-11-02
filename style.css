@@ -49,6 +49,13 @@ header {
     text-align: center;
     padding: 1em;
     padding-top: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(./images/giannellipalleggio.jpg) no-repeat bottom right,
+        url(./images/michielettocoppa.jpg) no-repeat top left;
+    background-size: 20%;
+    margin: 0.7em
 }
 
 header img {
@@ -273,7 +280,15 @@ footer {
     background-color: var(--breadcolor);
     text-align: center;
     font-style: italic;
-    height: 3em;
+    font-size: small;
+    height: 2em;
+
+    padding-top: 0.5em;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 
     border-style: solid;
     border-width: 0.15em;
@@ -281,4 +296,8 @@ footer {
     border-bottom: 0em;
     border-right: 0em;
     border-left: 0em;
+}
+
+footer img {
+    margin: 0em 1em;
 }
