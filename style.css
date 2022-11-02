@@ -136,6 +136,9 @@ aside {
     float: right;
     max-width: 30%;
     background-color: var(--bgcolor);
+    margin-left: 2em;
+    line-height: 1.4em;
+
     border-width: 0.15em;
     border-color: var(--bordercolor);
     border-style: solid;
@@ -179,26 +182,28 @@ main {
 
 main>p {
     margin-bottom: 0.5em;
+    padding: 0em 2em;
 }
 
 main h1 {
     line-height: 1.5em;
     margin-bottom: 1em;
+    margin-left: 2em;
     text-align: center;
 }
 
 main>h2 {
     line-height: 1.5em;
-    margin: 0.7em 0em;
+    margin: 0.7em 2em;
     text-align: left;
 }
 
 main>dl {
-    margin-left: 1em;
+    margin-left: 3em;
 }
 
 main>dl>dt {
-    padding-left: 1em;
+    padding-left: 1.2em;
     background-image: url(./images/favicon-32x32.png);
     background-repeat: no-repeat;
     background-size: 1em;
@@ -206,7 +211,7 @@ main>dl>dt {
 }
 
 main>dl>dd {
-    padding-left: 1em;
+    padding-left: 1.2em;
 }
 
 main>ul {
