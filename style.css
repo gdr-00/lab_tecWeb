@@ -199,7 +199,7 @@ main>h2 {
 }
 
 main>dl {
-    margin-left: 3em;
+    margin: 0em 3em;
 }
 
 main>dl>dt {
