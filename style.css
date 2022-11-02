@@ -228,7 +228,8 @@ main>img {
 
 #squadra {
     display: block;
-    width: 95%;
+    width: 90%;
+    margin: 0em 2.3em;
 }
 
 #squadra em {
