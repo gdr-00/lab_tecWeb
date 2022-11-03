@@ -25,7 +25,8 @@ body {
 }
 
 html {
-    background: url(./images/bg.png) center/cover;
+    background: url(./images/bg.png);
+    background-size: contain;
     /*TODO*/
 }
 
@@ -49,21 +50,21 @@ header {
     text-align: center;
     padding: 1em;
     padding-top: 0.7em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: url(./images/giannellipalleggio.jpg) no-repeat bottom right,
         url(./images/michielettocoppa.jpg) no-repeat top left;
-    background-size: 20%;
-    margin: 0.7em
-}
-
-header img {
-    max-width: 40%;
+    background-size: 20%, 20%;
+    margin: 0.7em;
 }
 
 header h1 {
-    display: none;
+    background-image: url(./images/logo_fipav.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    text-indent: -9999px;
+    line-height: 1.5em;
+    font-size: 6em;
 }
 
 header h2 {
