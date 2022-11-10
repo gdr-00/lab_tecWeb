@@ -189,7 +189,7 @@ main>p {
 main h1 {
     line-height: 1.5em;
     margin-bottom: 1em;
-    margin-left: 2em;
+    margin: 0em 1em;
     text-align: center;
 }
 
@@ -304,5 +304,6 @@ footer p {
 }
 
 footer img {
-    margin: 0em 1em;
+    margin: 0em 0em;
+    size: 1em;
 }
