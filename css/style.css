@@ -278,6 +278,36 @@ main>img {
 
 /*
 ======================================
+            NAVIGATIONHELP
+======================================
+*/
+
+.navigationHelp {
+    display: block;
+    text-indent: -9999em;
+    height: 1px;
+}
+
+/*
+======================================
+               TABELLA
+======================================
+*/
+table {
+    margin: 1em;
+    border-style: solid;
+}
+
+table caption {
+    background: var(--bgcolor);
+}
+
+thead {
+    background: var(--bgcolor);
+}
+
+/*
+======================================
                 FOOTER
 ======================================
 */

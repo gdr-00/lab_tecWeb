@@ -414,86 +414,96 @@
             </dd>
         </dl>
 
-        <table>
-			<caption>Giocatori</caption>
+        <span id="sumTabella" class="navigationHelp">In questa tabella vengono riassunti i dati dei giocatori in 5
+            colonne: nome, ruolo, maglia in nazionale, punti e squadra di provenienza.</span>
+
+        <table id="tabellaGiocatori" aria-describedby="sumTabella">
+            <caption>Giocatori</caption>
+
             <thead>
-            <tr>
-                <td scope="col" >Giocatore</td>
-                <td scope="col" >Ruolo</td>
-                <td scope="col" >Maglia </td>
-                <td scope="col" >Punti</td>
-                <td scope="col" >Squadra di provenienza</td>
-            </tr>
+                <tr>
+                    <th scope="col">Giocatore</th>
+                    <th scope="col">Ruolo</th>
+                    <th scope="col">Maglia </th>
+                    <th scope="col">Punti</th>
+                    <th scope="col">Squadra di provenienza</th>
+                </tr>
             </thead>
-			<tbody>
-			<tr>
-				<td scope="row">Simone Giannelli</td>
-				<td data-title="Ruolo">Palleggiatore</td>
-				<td data-title="Maglia">6</td>
-				<td data-title="Punti">872</td>
-				<td data-title="Squadra_di_provenienza">Sir Safety Susa Perugia</td>
-			</tr>
-			<tr>
-				<td scope="row">Riccardo Sbertoli</td>
-				<td data-title="Ruolo">Palleggiatore</td>
-				<td data-title="Maglia">8</td>
-				<td data-title="Punti">393</td>
-				<td data-title="Squadra_di_provenienza">Itas Trentino</td>
-			</tr>
-			<tr>
-				<td scope="row">Fabio Balaso</td>
-				<td data-title="Ruolo">Libero</td>
-				<td data-title="Maglia">7</td>
-				<td data-title="Punti">1606</td>
-				<td data-title="Squadra_di_provenienza">Cucine Lube Civitanova</td>
-			</tr>
-			<tr>
-				<td scope="row">Leonardo Scanferla</td>
-				<td data-title="Ruolo">Libero</td>
-				<td data-title="Maglia">24</td>
-				<td data-title="Punti">623</td>
-				<td data-title="Squadra_di_provenienza">Gas Sales Bluenergy Piacenza</td>
-			</tr>
-			<tr>
-				<td scope="row">Simone Anzani</td>
-				<td data-title="Ruolo">Centrale</td>
-				<td data-title="Maglia">17</td>
-				<td data-title="Punti">2276</td>
-				<td data-title="Squadra_di_provenienza">Cucine Lube Civitanova</td>
-			</tr>
-			<tr>
-				<td scope="row">Gianluca Galassi</td>
-				<td data-title="Ruolo">Centrale</td>
-				<td data-title="Maglia">14</td>
-				<td data-title="Punti">1144</td>
-				<td data-title="Squadra_di_provenienza">Vero Volley Monza</td>
-			</tr>
-			<tr>
-				<td scope="row">Alessandro Michieletto</td>
-				<td data-title="Ruolo">Schiacciatore</td>
-				<td data-title="Maglia">5</td>
-				<td data-title="Punti">960</td>
-				<td data-title="Squadra_di_provenienza">Itas Trentino</td>
-			</tr>
-			<tr>
-				<td scope="row">Daniele Lavia</td>
-				<td data-title="Ruolo">Schiacciatore</td>
-				<td data-title="Maglia">15</td>
-				<td data-title="Punti">1604</td>
-				<td data-title="Squadra_di_provenienza">Itas Trentino</td>
-			</tr>
-			<tr>
-				<td scope="row">Yuri Romanò</td>
-				<td data-title="Ruolo">Schiacciatore</td>
-				<td data-title="Maglia">17</td>
-				<td data-title="Punti">1865</td>
-				<td data-title="Squadra_di_provenienza">Gas Sales BluenergyPiacenza</td>
-			</tr>
-			<tr>
-				<td scope="row">Totale Punti</td>
-				<td data-title="Punti">11343</td>
-			</tr>
-	</tbody></table>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Simone Giannelli</th>
+                    <td>Palleggiatore</td>
+                    <td>6</td>
+                    <td>872</td>
+                    <td><span lang="en">Sir Safety</span> Susa Perugia</td>
+                </tr>
+                <tr>
+                    <th scope="row">Riccardo Sbertoli</th>
+                    <td>Palleggiatore</td>
+                    <td>8</td>
+                    <td>393</td>
+                    <td>Itas Trentino</td>
+                </tr>
+                <tr>
+                    <th scope="row">Fabio Balaso</th>
+                    <td>Libero</td>
+                    <td>7</td>
+                    <td>1606</td>
+                    <td>Cucine Lube Civitanova</td>
+                </tr>
+                <tr>
+                    <th scope="row">Leonardo Scanferla</th>
+                    <td>Libero</td>
+                    <td>24</td>
+                    <td>623</td>
+                    <td><span lang="en">Gas Sales Bluenergy</span> Piacenza</td>
+                </tr>
+                <tr>
+                    <th scope="row">Simone Anzani</th>
+                    <td>Centrale</td>
+                    <td>17</td>
+                    <td>2276</td>
+                    <td>Cucine Lube Civitanova</td>
+                </tr>
+                <tr>
+                    <th scope="row">Gianluca Galassi</th>
+                    <td>Centrale</td>
+                    <td>14</td>
+                    <td>1144</td>
+                    <td>Vero Volley Monza</td>
+                </tr>
+                <tr>
+                    <th scope="row">Alessandro Michieletto</th>
+                    <td>Schiacciatore</td>
+                    <td>5</td>
+                    <td>960</td>
+                    <td><span lang="en">Itas Trentino</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Daniele Lavia</th>
+                    <td>Schiacciatore</td>
+                    <td>15</td>
+                    <td>1604</td>
+                    <td><span lang="en">Itas Trentino</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Yuri Romanò</th>
+                    <td>Schiacciatore</td>
+                    <td>17</td>
+                    <td>1865</td>
+                    <td><span lang="en">Gas Sales Bluenergy</span> Piacenza</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">Totale Punti</td>
+                    <td>11343</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
 
     </main>
     <footer>
