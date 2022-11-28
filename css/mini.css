@@ -25,7 +25,7 @@ body {
 }
 
 html {
-    background: url(./images/bg.png);
+    background: url(../images/bg.png);
     background-size: contain;
     /*TODO*/
 }
@@ -48,14 +48,14 @@ header {
     text-align: center;
     padding: 1em;
     padding-top: 0.7em;
-    background: url(./images/giannellipalleggio.jpg) no-repeat bottom right,
-        url(./images/michielettocoppa.jpg) no-repeat top left;
+    background: url(../images/giannellipalleggio.jpg) no-repeat bottom right,
+        url(../images/michielettocoppa.jpg) no-repeat top left;
     background-size: 20%, 20%;
     margin: 0.7em;
 }
 
 header h1 {
-    background-image: url(./images/logo_fipav.svg);
+    background-image: url(../images/logo_fipav.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -119,7 +119,7 @@ header h2 {
 #currentlink {
     color: var(--txtcolor);
     padding-left: 1.5em;
-    background-image: url(./images/favicon-32x32.png);
+    background-image: url(../images/favicon-32x32.png);
     background-repeat: no-repeat;
     background-size: 1.2em;
     background-position-y: center;
@@ -201,7 +201,7 @@ main>dl {
 
 main>dl>dt {
     padding-left: 1.2em;
-    background-image: url(./images/favicon-32x32.png);
+    background-image: url(../images/favicon-32x32.png);
     background-repeat: no-repeat;
     background-size: 1em;
     background-position-y: center;
