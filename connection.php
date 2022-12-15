@@ -35,7 +35,12 @@ class DBAccess{
         if(mysqli_num_rows($queryResult)==0){
             return NULL;
         } else {
-            
+            $result = array();
+            while ($riga = mysqli_fetch_assoc($queryResult)){
+                array_push($result, $riga);
+            }
+            $queryResult->free();
+            return $result;
         }
     }
 }
