@@ -43,6 +43,10 @@ class DBAccess{
             return $result;
         }
     }
+
+    public function closeDBConnection() {
+        mysqli_close($this->connection);
+    }
 }
 
 ?>
