@@ -10,3 +10,6 @@
 - [ ] Tabindex corretto
 - [ ] Span per parole estere
 - [ ] Tag abbr per abbreviazioni
+- [ ] Evitare stacked menu
+- [ ] Dimensione minima mobile tasti clickabili 30w x 44hpx 44w x 30h px
+- [ ]
