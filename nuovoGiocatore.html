@@ -17,11 +17,15 @@
 
     <!-- Stampa -->
     <link rel="stylesheet" href="css/print.css" media="print" />
+    <script src="/js/nuovoGiocatore.js"></script>
 </head>
 
-<body>
+<body onload="caricamento();">
     <!-- Prima parte del sito, l'intestazione, i titoli -->
     <header>
+        <nav aria-label="aiuti alla navigazione">
+            <a class="navigationHelp" href="#content">Vai al contenuto</a>
+        </nav>
         <h1> Federazione Italiana Pallavolo </h1>
         <!-- non metto l'immagine perche rimpiazzero il testo con l'immagine sul CSS -->
         <h2> La pallavolo maschile Italiana </h2>
@@ -43,82 +47,87 @@
 
     <main>
         <h1>Inserisci un nuovo Giocatore</h1>
-        <form method="post" action="nuovoGiocatore.php">
-            <messaggiform>
-                <fieldset>
-                    <legend>Informazioni Generali</legend>
-                    <label for="nome">Nome e Cognome: </label>
-                    <span>
-                        <input type="text" name="nome" id="nome" value="<valoreNome />">
-                    </span>
-                    <p>Capitano?</p>
-                    <span>
-                        <input type="radio" id="capitano_si" name="capitano" value="1">
-                    </span>
-                    <label for="capitano_si">Si</label>
-                    <br>
-                    <span>
-                        <input type="radio" id="capitano_no" name="capitano" value="0" checked="">
-                    </span>
-                    <label for="capitano_no">No</label>
-                    <br>
-                    <label for="dataNascita">Data di Nascita: </label>
-                    <span>
-                        <input type="date" name="dataNascita" id="dataNascita" value="<valData />" required="">
-                    </span>
-                    <br>
-                    <label for="luogo">Luogo di Nascita: </label>
-                    <span>
-                        <input type="text" name="luogo" id="luogo" value="<valLuogo />" required>
-                    </span>
-                    <br>
-                    <label for="altezza">Altezza: </label>
-                    <span>
-                        <input type="number" name="altezza" id="altezza" value="<valoreAltezza />">
-                    </span>
-                    <br>
-                </fieldset>
-                <fieldset>
-                    <legend>Nazionale</legend>
-                    <label for="ruolo">Ruolo: </label>
-                    <select id="ruolo" name="ruolo" value="<valoreRuolo />">
-                        <option value="Palleggiatore">Palleggiatore</option>
-                        <option value="Libero">Libero</option>
-                        <option value="Centrale">Centrale</option>
-                        <option value="Schiacciatore">Schiacciatore</option>
-                        <option value="Opposto">Opposto</option>
-                    </select>
-                    <br>
-                    <label for="magliaNazionale">Maglia in Nazionale: </label>
-                    <span>
-                        <input type="number" name="magliaNazionale" id="magliaNazionale"
-                            value="<valoreMagliaNazionale />">
-                    </span>
-                    <br>
-                </fieldset>
-                <fieldset>
-                    <legend>Carriera</legend>
-                    <label for="punti">Punti/Ricezioni: </label>
-                    <span>
-                        <input type="number" name="punti" id="punti" value="<valorePunti />">
-                    </span>
-                    <br>
-                    <label for="riconoscimenti">Riconoscimenti: </label>
-                    <span>
-                        <textarea id="riconoscimenti" name="riconoscimenti"><valoreRiconoscimenti /></textarea>
-                    </span>
-                    <br>
-                    <label for="note">Note: </label>
-                    <span>
-                        <textarea id="note" name="note"><valoreNote /></textarea>
-                    </span>
-                    <br>
-                </fieldset>
-                <fieldset>
-                    <legend>Bottoni</legend>
-                    <input type="submit" id="submit" name="submit" class="margineSinistro" value="Inserisci giocatore">
-                    <input type="reset" id="reset" class="margineSinistro" value="Cancella tutto">
-                </fieldset>
+        <form method="post" action="nuovoGiocatore.php" onsubmit="return validazioneForm();">
+            <messaggiform />
+            <fieldset>
+                <legend>Informazioni Generali</legend>
+
+                <label for="nome">Nome e Cognome: </label>
+                <span>
+                    <input type="text" name="nome" id="nome" value="<valoreNome />" />
+                </span>
+                <p>Capitano?</p>
+                <span>
+                    <input type="radio" id="capitano_si" name="capitano" value="1">
+                </span>
+                <label for="capitano_si">Si</label>
+                <br />
+                <span>
+                    <input type="radio" id="capitano_no" name="capitano" value="0" checked="">
+                </span>
+                <label for="capitano_no">No</label>
+                <br />
+                <label for="dataNascita">Data di Nascita: </label>
+                <span>
+                    <input type="date" name="dataNascita" id="dataNascita" value="<valData />" required />
+                </span>
+                <br />
+                <label for="luogo">Luogo di Nascita: </label>
+                <span>
+                    <input type="text" name="luogo" id="luogo" value="<valLuogo />" required>
+                </span>
+                <br />
+                <label for="Squadra">Squadra: </label>
+                <span>
+                    <input type="text" name="squadra" id="squadra" value="<valSquadra />" required>
+                </span>
+                <br />
+                <label for="altezza">Altezza: </label>
+                <span>
+                    <input type="number" name="altezza" id="altezza" value="<valoreAltezza />">
+                </span>
+                <br />
+            </fieldset>
+            <fieldset>
+                <legend>Nazionale</legend>
+                <label for="ruolo">Ruolo: </label>
+                <select id="ruolo" name="ruolo" value="<valoreRuolo />">
+                    <option value="Palleggiatore">Palleggiatore</option>
+                    <option value="Libero">Libero</option>
+                    <option value="Centrale">Centrale</option>
+                    <option value="Schiacciatore">Schiacciatore</option>
+                    <option value="Opposto">Opposto</option>
+                </select>
+                <br>
+                <label for="magliaNazionale">Maglia in Nazionale: </label>
+                <span>
+                    <input type="number" name="magliaNazionale" id="magliaNazionale" value="<valoreMagliaNazionale />">
+                </span>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Carriera</legend>
+                <label for="punti">Punti/Ricezioni: </label>
+                <span>
+                    <input type="number" name="punti" id="punti" value="<valorePunti />">
+                </span>
+                <br>
+                <label for="riconoscimenti">Riconoscimenti: </label>
+                <span>
+                    <textarea id="riconoscimenti" name="riconoscimenti"><valoreRiconoscimenti /></textarea>
+                </span>
+                <br>
+                <label for="note">Note: </label>
+                <span>
+                    <textarea id="note" name="note"><valoreNote /></textarea>
+                </span>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Bottoni</legend>
+                <input type="submit" id="submit" name="submit" class="margineSinistro" value="Inserisci giocatore">
+                <input type="reset" id="reset" class="margineSinistro" value="Cancella tutto">
+            </fieldset>
             </messaggiform>
         </form>
     </main>

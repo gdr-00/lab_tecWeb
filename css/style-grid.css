@@ -66,6 +66,12 @@ header {
     background-size: 20%, 20%;
 }
 
+.navigationHelp {
+    display: block;
+    text-indent: -9999em;
+    height: 1px;
+}
+
 header img {
     padding-right: 4em;
 }
